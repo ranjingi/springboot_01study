@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ranjini.springboot_01study.mapper.SmbmsUserMapper">
+   <select id="selectUserByid" resultType="com.ranjini.springboot_01study.pojo.SmbmsUser">
+       select * from smbms_user where id = #{id}
+   </select>
+</mapper>
